@@ -9,7 +9,7 @@ Pod::Spec.new do |spec|
   spec.swift_version = '5.0'
   spec.platform     = :ios, "13.0"
   spec.source_files = 'CalendarControl/**/*.swift'
-  spec.exclude_files = 'Classes/Exclude'
+  spec.exclude_files = 'Classes/**/*.swift'
   spec.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
   spec.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
 end
