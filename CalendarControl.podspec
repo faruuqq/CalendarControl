@@ -9,8 +9,8 @@ Pod::Spec.new do |spec|
   spec.license      = { :type => "MIT", :file => "LICENSE" }
   spec.author       = { "Faruuq" => "faruuq.q@icloud.com" }
   spec.platform     = :ios, "12.0"
-  #spec.source       = { :http => 'file:' + __dir__ + "/" }
+  # spec.source       = { :http => 'file:' + __dir__ + "/" }
   spec.source       = { :git => "https://github.com/faruuqq/CalendarControl.git", :tag => "#{spec.version}" }
-  spec.source_files = "CalendarControl/*.{swift}"
+  spec.source_files = "CalendarControl/"
   # spec.swift_version = "5.0"
 end
