@@ -1,16 +1,16 @@
 Pod::Spec.new do |spec|
-  spec.name         = "CalendarControl"
-  spec.version      = "0.0.1"
-  spec.summary      = "A summary of CalendarControl"
-  spec.description  = <<-DESC
-                    Just a desc of CalendarControl which is required to be written!
-                   DESC
-  spec.homepage     = "https://appcoda.com"
-  spec.license      = { :type => "MIT", :file => "LICENSE" }
-  spec.author       = { "Faruuq" => "faruuq.q@icloud.com" }
-  spec.platform     = :ios, "12.0"
-  # spec.source       = { :http => 'file:' + __dir__ + "/" }
-  spec.source       = { :git => "https://github.com/faruuqq/CalendarControl.git", :tag => "#{spec.version}" }
-  spec.source_files = "CalendarControl/"
-  # spec.swift_version = "5.0"
+  spec.name         = 'CalendarControl'
+  spec.version      = '0.0.1'
+  spec.license      = { :type => 'MIT', :file => 'LICENSE' }
+  spec.homepage     = 'https://github.com/faruuqq/CalendarControl'
+  spec.authors      = { 'Faruuq' => 'faruuq.q@icloud.com' }
+  spec.summary      = 'This is just summary of Calendar Control.'
+  spec.source       = { :git => 'https://github.com/faruuqq/CalendarControl.git', :tag => spec.version }
+  spec.swift_version = '5.0'
+  spec.platform     = :ios, "13.0"
+  spec.source_files = 'CalendarControl/**/*.swift'
+  spec.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+  spec.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
 end
+
+# "#{spec.version}"
